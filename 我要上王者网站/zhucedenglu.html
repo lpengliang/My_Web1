@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我要上王者</title>
+<link href="css/style08.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/js08.js"></script>
+</head>
+<body>
+
+<!--head-->
+<div class="head">
+	<div class="left"><img src="images/logo.png" />
+    </div>
+    <div class="center">
+	<p align="center">
+  <strong>
+    <font face="微软雅黑" size="6" color="#5848EC">王者峡谷</font>
+    <font face="微软雅黑" size="7" color="#282897">欢迎你！</font>
+    </strong>
+</p>
+	</div>
+	<div class="right1"><img src="images/phone.png" /><font face="Verdana, Geneva, sans-serif" color="#FDFDFF">13422143099
+    </font></div>
+</div>
+<!--nav-->
+<div id="nav_yx" class="nav_yx_">
+    <ul class="nav_yx">
+        <li><a href="home.html"  >首页</a></li>
+        <li><a href="yingxiong.html" >英雄介绍</a></li>
+        <li><a href="zhibobisai.html">直播比赛</a></li>
+        <li><a href="#">交友社区</a></li>
+        <li><a href="zhucedenglu.html" class="color_in">注册登陆</a></li>
+        <li><a href="#">联系我们</a></li>
+        
+    </ul>
+</div>
+<!--banner-->
+<div class="banner">
+    <ul class="banner_pic" id="banner_pic">
+        <li class="current" ><img class="one" src="images/01.jpg"/></li>
+        <li class="pic" ><img class="one" src="images/02.jpg"/></li>
+        <li class="pic" ><img class="one" src="images/03.jpg"/></li>
+        <li class="pic" ><img class="one" src="images/04.jpg"/></li>
+    </ul>
+    <ol id="button">
+        <li class="current"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+    </ol>
+</div>
+<div class="denglu"><FORM name="form1" class="form12" onsubmit="return checkForm()" action="js.htm" method="post">
+<TABLE width="588" align="center" border="0">
+  <TBODY>
+  <h1 align="left" class="h1_yonghu" >用户登陆</h1>
+  <TR>
+    <TD width="100">用户名：</TD>
+    <TD 
+width="300"><INPUT name="textname" class="text_yonghu" onblur="checkna()" type="text"> 
+      <SPAN class="style4"></SPAN></TD>
+    <TD width="201">
+      <DIV id="divname">请输入6-12位用户名</DIV></TD></TR>
+  <TR>
+    <TD>密码：</TD>
+    <TD><INPUT name="textpassword1" class="text_yonghu" id="textpassword1" onblur="checkpsd1()" type="password"> 
+            <SPAN class="style4"></SPAN></TD>
+    <TD>
+      <DIV id="divpassword1">请输入密码，长度6-12，字母和数字的组合</DIV></TD></TR>
+   <TR align="center">
+    <TD colspan="3">
+      <DIV align="center"><INPUT name="Submit" type="button" class="tijiao" id="tijiao" value="提交"   onclick="denglu();">         
+<INPUT name="Submit2" type="button" class="tijiao" value="重置"></DIV>
+  </TBODY>
+  </TABLE></FORM>
+</div>
+<!--学好英语-->
+<div id="content">
+   <h1 class="step">注册步骤:</h1>
+   <form action="#" method="post" class="one2">
+   
+     <h3>您的账号信息:</h3>
+     <table class="content" >
+        <tr>
+          <td class="left">注册方式：</td>
+          <td>
+             <label for="one"><input type="radio" name="sex" id="one" />E-mail注册</label>&nbsp;&nbsp;&nbsp;&nbsp;
+             <label for="two"><input type="radio" name="sex" id="two" />手机号码注册</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">注册邮箱:</td> 
+          <td><input type="text" class="right" /></td>
+        </tr>
+        <tr>
+          <td class="left">注册手机:</td> 
+          <td><input type="text" class="right" /></td>
+        </tr>
+        <tr>
+          <td class="left">登录密码:</td> 
+          <td><input type="password" maxlength="8" class="right" /></td>
+        </tr>
+        <tr>
+          <td class="left">昵称:</td> 
+          <td><input type="text" class="right" /></td>
+        </tr>
+     </table>
+     <h3>您的个人信息:</h3>
+     <table class="content" >
+        <tr>
+            <td class="left">性别:</td>
+            <td>
+            <label for="boy"><input type="radio" name="sex" id="boy" />男</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="girl"><input type="radio" name="sex" id="girl" />女</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="left">学历:</td>
+            <td>
+            <select>
+                <option>-请选择-</option> 
+                <option>中职/高中</option>
+                <option>专科/本科</option>
+                <option>硕士研究生</option>
+                <option>博士研究生</option>
+            </select>
+            </td>
+        </tr>    
+        <tr>
+            <td class="left">所在城市:</td>
+            <td>
+            <select>
+                <option>-请选择-</option> 
+                <option selected="selected">北京</option>
+                <option>上海</option>
+                <option>广州</option>
+                <option>深圳</option>
+            </select>
+            </td>
+        </tr>    
+        <tr>
+            <td class="left">兴趣爱好:</td>
+            <td>
+                <input type="checkbox" />足球&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" />篮球&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" />游泳&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" />唱歌&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" />跑步&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" />瑜伽
+            </td>
+        </tr>
+          
+        <tr>
+            <td class="left">自我介绍:</td>
+            <td>
+                <textarea cols="60" rows="8">评论的时候，请准纪守法并注意语言文明，
+                多个文档分享人一些支持。</textarea>
+          </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" class="btn"></td> 
+        </tr>
+     </table>
+    
+   </form>
+   </div>
+</div>
+
+<!--footer-->
+<div class="footer">我要上王者网站版权所有2017-2020京ICP备08000880号&nbsp;&nbsp;京公网安备110102137723</div>
+<div class="wechat"><img src="images/wechat.png" /></div>
+</body>
+</html>
